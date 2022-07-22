@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-# This script is displaying "Best  School" 9 times and hi at the teenth stage
-count=0
+# # This script is displaying "Best School" 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
 
-while [ $count -lt 10 ]
-do
-  if [ $count -eq 9 ]
-  then
-    echo "Hi"
-  fi
-  echo "Best School"
-  (( count++ ))
+string_a='Best School'
+counter=0
+while [ $counter -lt 10 ]; do
+	echo "$string_a"
+	(( counter+=1 ))
+	if [ $counter -eq 9 ]; then
+		echo "Hi"
+	fi
 done

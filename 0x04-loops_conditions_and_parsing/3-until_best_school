@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
-i=0
-until [ $((i++)) -gt 9 ]; 
-do
-	echo "Best School";
-done
+# This script is displaying "Best School" 10 times
+
+string_a='Best School'
+counter=10
+until [ $counter -lt 1 ]; do echo "$string_a"; (( counter-=1 )); done
